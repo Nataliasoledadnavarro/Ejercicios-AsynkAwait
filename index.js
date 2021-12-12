@@ -59,7 +59,28 @@ const estaEnRango = (valor,minimo,maximo) => valor >= minimo && valor <= maximo
 console.log(estaEnRango(5,4,8))
 console.log(estaEnRango(15,4,8))
 //https://mumuki.io/frontend.ada/exercises/11155-introduccion-a-javascript-condicionales-puede-avanzar
+//Definí una función puedeAvanzar que tome por parámetro un string con un color del semáforo y nos diga si puede avanzar
 
+const puedeAvanzar = color => color === "verde"
+
+console.log(puedeAvanzar("verde"))
+console.log(puedeAvanzar("rojo"))
 
 //https://mumuki.io/frontend.ada/exercises/11156-introduccion-a-javascript-condicionales-es-vocal
+//Definí una función esVocal que tome por parámetro un string letra y nos indique si letra es una vocal.
+const esVocal = letra => letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"
+
+console.log(esVocal("a"))
+console.log(esVocal("z"))
+console.log(esVocal("i"))
+console.log(esVocal("o"))
+
 //https://mumuki.io/frontend.ada/exercises/11157-introduccion-a-javascript-condicionales-es-consonante*/
+
+const esConsonante = letra => esVocal(letra) === false
+
+console.log(esConsonante("a"))
+
+ console.log(esConsonante("n"))
+
+ console.log(esConsonante("e"))
